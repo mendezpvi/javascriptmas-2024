@@ -69,3 +69,6 @@ function checkDuplicate() {
 + `+`: Matches one or more of the preceding character (multiple space)
 
 + `g`: Ensures the pattern is applied globally to anll matches in the text.
+
+***
+[🔙 Javascriptmas 2024](../README.md)
