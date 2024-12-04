@@ -4,6 +4,13 @@ Javascriptmas is a festive coding event created by [**Scrimba**](https://scrimba
 
 ![](./hero.avif)
 
+## Day 03 - Santa's Emoji Hack 👍
+
+| [Scrim code](https://scrimba.com/exercise-s09c00q7fj) | [Challenge](https://github.com/mendezpvi/javascriptmas-2024/tree/main/day-03) |
+| --- | --- |
+
+![](./day-03/JavaScriptmas-Day-03.avif)
+
 ## Day 02 - Ugly Advent Calendar 🗓️
 
 | [Scrim code](https://scrimba.com/exercise-s0q8lt2e6r) | [Challenge](https://github.com/mendezpvi/javascriptmas-2024/tree/main/day-02) |
