@@ -58,6 +58,14 @@ function emojifyPhrase(phrase) {
 }
 ```
 
+### Resources
+
+📚 [startsWith()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith) by MDN
+
+📚 [in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in) by MDN
+
+📚 [split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) by MDN
+
 
 
 
