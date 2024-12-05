@@ -4,6 +4,13 @@ Javascriptmas is a festive coding event created by [**Scrimba**](https://scrimba
 
 ![](./hero.avif)
 
+## Day 05 - Find the anagrams 🔍
+
+| [Scrim code](https://scrimba.com/exercise-s0trb56kgt) | [Challenge](./day-05/README.md) |
+| --- | --- |
+
+![](./day-05/JavaScriptmas-Day-05.gif)
+
 ## Day 04 - Christmas Movie Emoji Quiz 🎬
 
 | [Scrim code](https://scrimba.com/exercise-s0n6uk9l97) | [Challenge](./day-04/README.md) |
