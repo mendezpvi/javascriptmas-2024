@@ -22,14 +22,16 @@ Use your emojify function from the previous exercise!
     + Example output: "Just read your article 👏"
 
 
-![](./advient-calendar.avif)
-
 ### Stretch goals:
 
 Don't just replace the shortcodes, but also any emojis are added directly to the text.
 
 
 ## Solution
+
+[Scrim code](https://scrimba.com/exercise-s09c00q7fj) 👈
+
+![](../assets/gifs/day-03.gif)
 
 ```js
 function emojifyWord(word) {

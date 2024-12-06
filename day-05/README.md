@@ -29,7 +29,9 @@ let anagrams = [
 
 ## *Solution* 🤔
 
-![](./JavaScriptmas-Day-05.gif)
+[Scrim code](https://scrimba.com/exercise-s0trb56kgt) 👈
+
+![](../assets/gifs/day-05.gif)
 
 ```js
 function findAnagrams(array) {

@@ -2,39 +2,14 @@
 
 Javascriptmas is a festive coding event created by [**Scrimba**](https://scrimba.com/home), running from December 1st to December 24th. Every day, a new *"door"* unlocks, revealing an exciting JavaScript challenge to solve.
 
-![](./hero.avif)
+![](./assets/images/hero.avif)
 
-## Day 05 - Find the anagrams 🔍
+***
 
-| [Scrim code](https://scrimba.com/exercise-s0trb56kgt) | [Challenge](./day-05/README.md) |
-| --- | --- |
+[![](./assets/images/day-01.avif)](./day-01/README.md)
+[![](./assets/images/day-02.avif)](./day-02/README.md)
+[![](./assets/images/day-03.avif)](./day-03/README.md)
+[![](./assets/images/day-04.avif)](./day-04/README.md)
+[![](./assets/images/day-05.avif)](./day-05/README.md)
+[![](./assets/images/day-06.avif)](./day-06/README.md)
 
-![](./day-05/JavaScriptmas-Day-05.gif)
-
-## Day 04 - Christmas Movie Emoji Quiz 🎬
-
-| [Scrim code](https://scrimba.com/exercise-s0n6uk9l97) | [Challenge](./day-04/README.md) |
-| --- | --- |
-
-![](./day-04/JavaScriptmas-Day-04.gif)
-
-## Day 03 - Santa's Emoji Hack 👍
-
-| [Scrim code](https://scrimba.com/exercise-s09c00q7fj) | [Challenge](./day-03/README.md) |
-| --- | --- |
-
-![](./day-03/JavaScriptmas-Day-03.avif)
-
-## Day 02 - Ugly Advent Calendar 🗓️
-
-| [Scrim code](https://scrimba.com/exercise-s0q8lt2e6r) | [Challenge](./day-02/README.md) |
-| --- | --- |
-
-![](./day-02/JavaScriptmas-Day-02.gif)
-
-## Day 01 - Grandpa's Gift List 🎅
-
-| [Scrim code](https://scrimba.com/exercise-s0g1bb2ue0) | [Challenge](./day-01/README.md) |
-| --- | --- |
-
-![](./day-01/JavaScriptmas-Day-01.gif)

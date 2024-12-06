@@ -32,7 +32,9 @@ Your task is to build an app that meets these criteria:
 
 ## *Solution* 🤔
 
-![](./JavaScriptmas-Day-04.gif)
+[Scrim code](https://scrimba.com/exercise-s0n6uk9l97) 👈
+
+![](../assets/gifs/day-04.gif)
 
 ```js
 const guessForm = document.getElementById('guess-form')

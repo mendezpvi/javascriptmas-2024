@@ -18,7 +18,9 @@ Improve the user experience of an advent calendar. The current design is basic a
 
 ## Solution
 
-![](./JavaScriptmas-Day-02.gif)
+[Scrim code](https://scrimba.com/exercise-s0q8lt2e6r) 👈
+
+![](../assets/gifs/day-02.gif)
 
 
 ***

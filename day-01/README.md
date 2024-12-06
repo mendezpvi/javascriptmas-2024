@@ -25,7 +25,9 @@ For example, only one of these entries should be added to the list — the other
 
 ## *Solution* 🤔
 
-![](./JavaScriptmas-Day-01.gif)
+[Scrim code](https://scrimba.com/exercise-s0g1bb2ue0) 👈
+
+![](../assets/gifs/day-01.gif)
 
 ```js
 function checkDuplicate() {
