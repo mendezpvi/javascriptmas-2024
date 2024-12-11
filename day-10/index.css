@@ -9,161 +9,246 @@ html {
 }
 
 body {
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  display: grid;
+  place-content: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background: url('./assets/background.svg');
 }
 
 main {
-  padding-block: 2em;
+  padding: 2em .05em;
   text-align: center;
 }
 
 h1 {
   text-shadow: 0 0 5px #FF2500;
+  text-wrap: balance;
 }
 
 .flag {
   position: relative;
   margin-inline: auto;
   inline-size: 360px;
-  block-size: 255px;
+  block-size: 225px;
   background: repeating-linear-gradient(45deg,
       #1F4C27 0%,
       #1F4C27 9.4%,
       #4C4D51 9.4%,
       #4C4D51 18.8%);
-  border: 2px solid #CC314C;
+  border: 2px solid #D2C8C8;
   border-radius: 10px;
 }
 
 .santa {
   position: absolute;
-  inline-size: 45%;
-  block-size: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 29px;
+  left: 124px;
+  inline-size: 142px;
+  block-size: 168px;
 }
 
 .hat {
   position: relative;
-  block-size: 40%;
-}
-
-.hat .part-1 {
-  position: absolute;
-  right: 0;
-  top: 0;
-  inline-size: 25%;
-  aspect-ratio: 1;
-  background-color: #8A0F00;
-  border-radius: 50%;
-}
-
-.hat .part-2 {
-  position: absolute;
-  right: -1.5em;
-  bottom: -8%;
-  inline-size: 40%;
-  aspect-ratio: 1;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-}
-
-.hat .part-3 {
-  position: absolute;
-  left: 0;
-  top: -1%;
-  inline-size: 85%;
-  block-size: 60%;
-  background-color: #FF2500;
-  border-radius: 150px 0 22px 0 / 75px 0 0 0;
-}
-
-.hat .part-4 {
-  position: absolute;
-  bottom: 0;
-  left: -8%;
   inline-size: 100%;
-  block-size: 55%;
-  background-color: #D3D3D3;
-  border-radius: 10px;
+  block-size: 64px;
+
+  & .part-1 {
+    position: absolute;
+    right: 18px;
+    inline-size: 36px;
+    block-size: 36px;
+    background-color: #8A0F00;
+    border-radius: 50%;
+  }
+
+  & .part-2 {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    inline-size: 50px;
+    block-size: 50px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+  }
+
+  & .part-3 {
+    position: absolute;
+    left: 10px;
+    inline-size: 92px;
+    block-size: 34px;
+    background-color: #FF2500;
+    border-radius: 50px 0 0 0;
+  }
+
+  & .part-4 {
+    position: absolute;
+    bottom: 0;
+    inline-size: 108px;
+    block-size: 30px;
+    background-color: #D3D3D3;
+    border-radius: 8px;
+  }
 }
 
-.face {
+.hair {
   position: relative;
-  inline-size: 100%;
-  block-size: 100%;
-}
-
-.face .part-1 {
-  position: absolute;
-  left: 1%;
-  top: 5%;
-  inline-size: 85%;
-  block-size: 15%;
-  background-color: #FFA64D;
-  border-radius: 15px;
-}
-
-.face .part-2 {
-  position: absolute;
-  left: 0;
-  top: -1%;
-  inline-size: 88%;
-  block-size: 10%;
+  top: -.5px;
+  left: 4px;
+  inline-size: 98px;
+  block-size: 12.5px;
   background-color: #F5F5F5;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 8px 8px;
+  z-index: 20;
 }
 
-.face .part-3 {
-  position: absolute;
-  left: 3%;
-  top: 17%;
-  inline-size: 82%;
-  block-size: 40%;
-  background-color: #E8E8E8;
-  border-radius: 20px;
+.ears {
+  position: relative;
+  top: -6px;
+  left: 4px;
+  inline-size: 98px;
+  block-size: 20px;
+  background-color: #FFA64D;
+  border-radius: 10px;
   z-index: 10;
 }
 
-.face .part-4 {
-  position: absolute;
-  left: 9%;
-  top: -1%;
-  inline-size: 70%;
-  block-size: 58%;
-  background-color: #FFD9B3;
-  border-radius: 0 0 30px 30%;
-  z-index: 50;
+.beard {
+  position: relative;
+  top: -6px;
+  left: 9px;
+  inline-size: 88px;
+  block-size: 80px;
 
-  & .eyes {
+  & .part-1 {
     position: absolute;
-    top: 20%;
-    left: 20%;
-    inline-size: 1.3rem;
-    block-size: 1rem;
-    background-color: #2F4F4F;
-    border-radius: 50%;
-    box-shadow: 3rem 0 0 #2F4F4F;
+    top: -5px;
+    inline-size: 100%;
+    block-size: 53px;
+    background-color: #E9E9E9;
+    border-radius: 15px;
+    z-index: 10;
   }
 
-  & .nose {
+  /* white */
+  & .part-2 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    inline-size: .5rem;
-    block-size: 1rem;
+    bottom: 22px;
+    left: 20%;
+    inline-size: 18px;
+    block-size: 18px;
     background-color: #FFFFFF;
+    border-radius: 15px;
     transform: translateX(-50%);
   }
 
-  & .mouth {
+  & .part-3 {
     position: absolute;
-    top: 60%;
+    bottom: 12px;
+    left: 35%;
+    inline-size: 18px;
+    block-size: 18px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    transform: translateX(-50%);
+  }
+
+  & .part-4 {
+    position: absolute;
+    bottom: 6px;
     left: 50%;
-    inline-size: 45%;
-    block-size: 25%;
+    inline-size: 20px;
+    block-size: 15px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 15px 15px;
+    transform: translateX(-50%);
+  }
+
+  & .part-5 {
+    position: absolute;
+    bottom: 12px;
+    left: 65%;
+    inline-size: 18px;
+    block-size: 18px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    transform: translateX(-50%);
+  }
+
+  & .part-6 {
+    position: absolute;
+    bottom: 22px;
+    left: 80%;
+    inline-size: 18px;
+    block-size: 18px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    transform: translateX(-50%);
+  }
+
+  /* gray */
+  & .part-7 {
+    position: absolute;
+    top: 48px;
+    left: 30%;
+    inline-size: 13px;
+    block-size: 10px;
+    background-color: #E0E0E0;
+    border-radius: 0 0 0 15px;
+    transform: translateX(-50%);
+  }
+
+  & .part-8 {
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    inline-size: 24px;
+    block-size: 20px;
+    background-color: #D3D3D3;
+    border-radius: 0 0 15px 15px;
+    transform: translateX(-50%);
+  }
+
+  & .part-9 {
+    position: absolute;
+    top: 48px;
+    left: 70%;
+    inline-size: 13px;
+    block-size: 10px;
+    background-color: #E0E0E0;
+    border-radius: 0 0 15px 0;
+    transform: translateX(-50%);
+  }
+}
+
+.face {
+  position: absolute;
+  top: 63px;
+  left: 13px;
+  inline-size: 80px;
+  block-size: 77px;
+  background-color: #FFD9B3;
+  border-radius: 0 0 20px 20px;
+  z-index: 20;
+
+  & .eyes {
+    position: absolute;
+    top: 18px;
+    left: 25%;
+    inline-size: 12px;
+    block-size: 9px;
+    background-color: #2F4F4F;
+    border-radius: 50%;
+    box-shadow: 28px 0 0 #2F4F4F;
+  }
+
+  & .mounth {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    inline-size: 25px;
+    block-size: 18px;
     background-color: #000000;
     border-radius: 0 0 50px 50px;
     transform: translateX(-50%);
@@ -177,113 +262,37 @@ h1 {
       inline-size: 50%;
       block-size: 50%;
       background-color: #FF2500;
-      border-radius: 6px 0 0 0;
+      border-radius: 3px 0 0 0;
     }
   }
 
-  & .whiskers-left {
+  & .nose {
     position: absolute;
-    top: 45%;
-    left: -10%;
-    inline-size: 60%;
-    block-size: 25%;
-    background-color: #D3D3D3;
-    border-radius: 40px 5px 40px 5px;
-    z-index: 10;
-  }
-
-  & .whiskers-right {
-    position: absolute;
-    top: 45%;
+    top: 37px;
     left: 50%;
-    inline-size: 60%;
-    block-size: 25%;
-    background-color: #D3D3D3;
-    border-radius: 5px 40px 5px 40px;
-    z-index: 10;
+    inline-size: 15px;
+    block-size: 12px;
+    background-color: #F3F3F3;
+    transform: translateX(-50%);
   }
-}
 
-.face .part-5 {
-  position: absolute;
-  left: 36.8%;
-  top: 46%;
-  inline-size: 13%;
-  block-size: 25%;
-  background-color: #D3D3D3;
-  border-radius: 20px;
-  z-index: 20;
-}
+  & .left-moustache {
+    position: absolute;
+    top: 37px;
+    left: -10px;
+    inline-size: 50px;
+    block-size: 18px;
+    background-color: #D3D3D3;
+    border-radius: 30px 1px 30px 5px;
+  }
 
-.face .part-6 {
-  position: absolute;
-  left: 25%;
-  top: 40%;
-  inline-size: 12%;
-  block-size: 25%;
-  background-color: #E0E0E0;
-  border-radius: 0 0 0 20px;
-  z-index: 20;
-}
-
-.face .part-7 {
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  inline-size: 12%;
-  block-size: 25%;
-  background-color: #E0E0E0;
-  border-radius: 0 0 20px 0;
-  z-index: 20;
-}
-
-
-.face .part-8 {
-  position: absolute;
-  left: 33%;
-  top: 55%;
-  inline-size: 20%;
-  block-size: 20%;
-  background-color: #FFFFFF;
-  border-radius: 20px;
-}
-
-.face .part-9 {
-  position: absolute;
-  left: 20%;
-  top: 52%;
-  inline-size: 25%;
-  block-size: 20%;
-  background-color: #FFFFFF;
-  border-radius: 20px;
-}
-
-.face .part-10 {
-  position: absolute;
-  left: 10%;
-  top: 45%;
-  inline-size: 22%;
-  block-size: 20%;
-  background-color: #FFFFFF;
-  border-radius: 20px;
-}
-
-.face .part-11 {
-  position: absolute;
-  left: 43%;
-  top: 52%;
-  inline-size: 25%;
-  block-size: 20%;
-  background-color: #FFFFFF;
-  border-radius: 20px;
-}
-
-.face .part-12 {
-  position: absolute;
-  left: 55%;
-  top: 45%;
-  inline-size: 22%;
-  block-size: 20%;
-  background-color: #FFFFFF;
-  border-radius: 20px;
+  & .right-moustache {
+    position: absolute;
+    top: 37px;
+    left: 50%;
+    inline-size: 50px;
+    block-size: 18px;
+    background-color: #D3D3D3;
+    border-radius: 1px 30px 5px 30px;
+  }
 }

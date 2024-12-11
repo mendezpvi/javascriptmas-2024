@@ -14,4 +14,5 @@ Javascriptmas is a festive coding event created by [**Scrimba**](https://scrimba
 [![](./assets/images/day-06.avif)](./day-06/README.md)
 <!--  -->
 [![](./assets/images/day-09.avif)](./day-09/README.md)
+[![](./assets/images/day-10.avif)](./day-10/README.md)
 
