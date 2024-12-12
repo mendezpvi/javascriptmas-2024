@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background: url(./assets/pattern.webp) no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: darkred;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card.revealed {
+    background-color: #fff;
+    color: black;
+    cursor: default;
+    transform: rotateY(180deg);
+}
+
+.card.hidden {
+    background-color: darkgreen;
+    &::after {
+        content: '?';
+    }
+}
