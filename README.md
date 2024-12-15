@@ -6,13 +6,16 @@ Javascriptmas is a festive coding event created by [**Scrimba**](https://scrimba
 
 ***
 
-[![](./assets/images/day-01.avif)](./day-01/README.md)
-[![](./assets/images/day-02.avif)](./day-02/README.md)
-[![](./assets/images/day-03.avif)](./day-03/README.md)
-[![](./assets/images/day-04.avif)](./day-04/README.md)
-[![](./assets/images/day-05.avif)](./day-05/README.md)
-[![](./assets/images/day-06.avif)](./day-06/README.md)
+[![](./assets/covers/day-01.avif)](./day-01/README.md)
+[![](./assets/covers/day-02.avif)](./day-02/README.md)
+[![](./assets/covers/day-03.avif)](./day-03/README.md)
+[![](./assets/covers/day-04.avif)](./day-04/README.md)
+[![](./assets/covers/day-05.avif)](./day-05/README.md)
+[![](./assets/covers/day-06.avif)](./day-06/README.md)
 <!--  -->
-[![](./assets/images/day-09.avif)](./day-09/README.md)
-[![](./assets/images/day-10.avif)](./day-10/README.md)
+[![](./assets/covers/day-09.avif)](./day-09/README.md)
+[![](./assets/covers/day-10.avif)](./day-10/README.md)
+
+
+[![](./assets/covers/day-15.avif)](./day-15/README.md) <!-- ✅ -->
 
