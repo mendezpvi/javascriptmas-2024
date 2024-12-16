@@ -19,13 +19,3 @@ Copy and paste each line below into the textarea as the answer for each task.
 
 <img src="" onerror="fetch('./data.js').then(res => res.text()).then(data => console.log(data))">
 
-
-{/* 
-Greetings!
-
-I just completed @scrimba's #JavaScriptmas challenge 🎁
-
-Solution here 👉 
-https://scrimba.com/exercise-s04gtmm45p
-
-Anyone else doing the advent calendar? */}
