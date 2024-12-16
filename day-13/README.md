@@ -1,19 +1,65 @@
-# Getting Started
-Install the dependencies and run the project
+# Day 13 - Santa's Change 👛
+
+## Challenge
+
+Santa has decided to start charging $5 per person for his yearly delivery service.
+
+Santa needs your help to figure out if he has enough money to give everyone change!
+
+### *Some things to keep in mind!*
+
++ Santa will only accept $5, $10 and $20 bills.
++ You cannot split a bill in half, for example if someone pays with a $10 and you only have a $10. You will take their $10 and they will not get any change!
++ Your goal will be to return a boolean. You should return `true` if everyone received their correct change, or `false` if at least one person did not.
+
+
+## Solution
+
+| [Scrim code](https://scrimba.com/exercise-s04sobeltg) |
+| --- |
+
+![](../assets/gifs/day-13.gif)
+
+```js
+function correctChangeFromSanta(bills) {
+  let fives = 0
+  let tens = 0
+
+  for (let bill of bills) {
+    if (bill === 5) {
+      fives++
+    } else if (bill === 10) {
+        if (fives > 0) {
+            fives--
+            tens++
+        } else {
+            return false
+        }
+    } else if (bill === 20) {
+        if (tens > 0 && fives > 0) {
+            tens--
+            fives--
+        } else if (fives >= 3) {
+            fives -= 3
+        } else {
+            return false
+        }
+    }
+  }
+
+  return true
+}
 ```
-npm install
-npm start
-```
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+### *Explanation*:
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+1. **Strategy**: The code uses two variables, `fives` and `tens`, to count how many 5 and 10 dollar bills Santa has. Then, for each bill in the `bills` array, Santa checks if he has enough money to give the correct change:
+    + If he receives a 5 dollar bill, he keeps it.
+    + If he receives a 10 dollar bill, he needs a 5 dollar bill to give change.
+    + If he receives a 20 dollar bill, he needs to give change with a combination of 5 and 10 dollar bills.
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+1. **Result**: If at any point Santa cannot give the correct change, the function returns `false`. If he can give change throughout the whole process, it returns `true`.
 
-Happy Coding!
+
+---
+[🔙 Javascriptmas 2024](../README.md)
