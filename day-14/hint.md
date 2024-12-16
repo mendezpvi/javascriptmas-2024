@@ -1,3 +1,5 @@
+*Hints:*
+
 There are many ways you could solve this challenge, but I did it using 4 functions:
 
 - renderAvatars() - to, well, render the avatars.
@@ -14,7 +16,9 @@ Useful JS
 
 - You will likely need to use element.classList.add() and element.classList.remove()
 
-/*
+---
+
+*Challenge:*
 The cool people of Lapland are bored of traditional social media and have decided to build their own app called Northagram...and they need your help!
 
 This is how the app should work:
@@ -31,4 +35,3 @@ Stretch Goals for dedicated Social Media Engineers
 - Grey out the avatar after that friend's pictures have been displayed.
 - Make it so clicking on an image pauses the timer.
 - Add left and right arrow overlays to the image so users can scroll back and forth.
-*/
