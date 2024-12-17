@@ -1,19 +1,33 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Day 08 - Seasonal Hangman ☃️
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+## Challenge
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+1. Your challenge is to build a Christmas take on the classic game "Hangman" where a player attempts to guess a word by selecting letters to save a snowman from melting.
+- The snowman is made up of 6 parts: hat, arm, nose, scarf, head, and body. These are separate images and have been positioned with CSS.
+- At the start of the game, a player can see a number of dashes, with a dash for each letter of the word. So if the word was TREE the player would see - - - -
+- The player selects a letter. 
+- If that letter is in the word, that letter replaces the dash in the corresponding position. For the word "TREE", if the player has selected the letter E, they will see --EE.
+- If the selected letter does not appear in the word, one part of the snowman gets removed.
+- If the player guesses the entire word, they win! 
+    - any removed parts of the snowman are reinstated.
+    - the snowman gets sunglasses
+    - the message "You Win!" is displayed in the "guess-container" div.
+-If the player guesses wrong 6 times: 
+    - only a puddle remains.
+    - the message "You Lose!" is displayed in the "guess-container" div.
+    
+***Stretch Goals***
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+- Disable the letter button once a letter has been used.
+- Add a "New Game" button that appears at the end of a game and resets the app. (You will need to create an array of words to guess)
 
-Happy Coding!
+
+## Solution
+
+[Scrim code](https://scrimba.com/exercise-s0thpnk414) 👈
+
+![](../assets/gifs/day-08.gif)
+
+
+---
+[🔙 Javascriptmas 2024](../README.md)

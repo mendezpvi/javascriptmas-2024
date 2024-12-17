@@ -1,4 +1,4 @@
-# Day 09- Which recipe should Grandma make? 🤔
+# Day 09 - Which recipe should Grandma make? 🤔
 
 ## Requirements for a suitable recipe
 1. Contains at least one ingredient Alice likes
@@ -8,6 +8,8 @@
 + Step 2: Output the suitable recipes
 
 ## Solution
+
+[Scrim code](https://scrimba.com/exercise-s0dir42tib) 👈
 
 ![](../assets/gifs/day-09.gif)
 
