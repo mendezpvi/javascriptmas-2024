@@ -1,0 +1,174 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+
+body {
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background: #f4f4f4;
+    color: #333;
+}
+
+main {
+    margin: 2em 1em;
+    min-inline-size: 21.875rem;
+    max-inline-size: 43.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.hero,
+.signup {
+    inline-size: 21.875rem;
+}
+
+.hero {
+    padding: 1em .5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    background: #0056b3;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+.hero-pic {
+    filter: drop-shadow(0 0 8px hsl(0, 0%, 0%, .8));
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.signup {
+    padding: 2em 1em;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+}
+
+.signup-form {
+    display: grid;
+    gap: .8em;
+}
+
+.form-input,
+.form-button {
+    padding: .5em 1em;
+    inline-size: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 5px;
+}
+
+.form-input {
+    text-transform: capitalize;
+    border: 1px solid #ddd;
+}
+
+input[type="email"] {
+    text-transform: lowercase;
+}
+
+.form-button {
+    padding-block: .6em;
+    font-weight: 600;
+    text-shadow: 0 0 1px black;
+    background: #0084ff;
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.message {
+    margin-top: .8em;
+    padding: .5em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: #005c0f;
+    background-color: #eee;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.job-benefits {
+    margin: calc(3em - 37px) 2.5rem 3em;
+    font-size: 1.5em;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+.footer {
+    font-size: .8rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.footer-txt {
+    color: #424242;
+}
+
+.footer-link {
+    margin-inline: .3em;
+    font-weight: 600;
+    text-decoration: underline wavy;
+    border-radius: 3px;
+    color: #0056b3;
+}
+
+@media (width >=45.75rem) {
+    main {
+        border-radius: 8px;
+        box-shadow: 0 0 10px hsl(0, 0%, 20%, .1);
+        overflow: hidden;
+    }
+
+    .hero {
+        border-radius: 0;
+    }
+}
+
+*:focus-visible {
+    outline: 2px dotted #1370c7;
+    outline-offset: 2px;
+}
+
+.footer-link:focus-visible {
+    text-decoration: none;
+}
+
+@media (hover:hover) {
+    .form-button:hover {
+        background-color: #1370c7;
+    }
+
+    .footer-link:hover {
+        text-decoration: none;
+    }
+}
