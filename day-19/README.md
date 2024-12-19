@@ -28,7 +28,7 @@ solved it correctly.
 
 ## Solution
 
-| [Srim code]() |
+| [Srim code](https://scrimba.com/exercise-s0i469uag0) |
 | --- |
 
 ![](../assets/gifs/day-19.gif)
