@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elf Name Generator</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Miltonian+Tattoo&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="../assets/favicon/scrimba-logo.png">
+    <link rel="apple-touch-icon" href="../assets/favicon/scrimba-logo.png">
+
+    <script type="module" src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="main-title">ELF NAME GENERATOR</h1>
+    </header>
+
+    <main class="main">
+        <section class="name-generator">
+            <form id="elf-name-form" class="elf-name-form" autocomplete="off">
+                <div class="form-group">
+                    <label for="first-name">Human First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="John" maxlength="15">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Human Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Doe" maxlength="15">
+                </div>
+
+                <p id="elf-name-display" class="elf-name-display" value="Joyful Dazzlebright">Joyful Dazzlebright</p>
+
+                <button id="generate-btn" class="generate-btn" type="submit">Generate Elf Name</button>
+            </form>
+        </section>
+
+        <section class="registered-employees">
+            <h2 class="section-title">Registered Employees:</h2>
+            <ol id="registered-elf-names" class="elf-names-list">
+                <li>Seems empty...</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="footer">
+        © 2024 Santa Software LLC. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

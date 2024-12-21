@@ -1,0 +1,159 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    justify-items: center;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--festive-red);
+    background-position: center;
+    color: var(--text-color);
+}
+
+:root {
+    --festive-red: #d0344d;
+    --festive-green: #55B82E;
+    --text-color: #FFFFFF;
+    --input-bg: #FFFFFF;
+    --background-overlay: rgba(255, 255, 255, 0.4);
+    --font-primary: 'Karla', sans-serif;
+    --font-title: 'Spicy Rice', serif;
+    --border-radius: 1.8rem;
+    --padding: 1.5em;
+    --button-padding: .8em;
+}
+
+.header {
+    padding-top: 3rem;
+}
+
+.main {
+    width: clamp(18rem, 90%, 28.125rem);
+    padding: var(--padding);
+    display: grid;
+    gap: 1.24em;
+    background: var(--background-overlay);
+    backdrop-filter: blur(2px);
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+}
+
+.main-title {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--text-color);
+    line-height: 1.1;
+}
+
+.elf-name-form {
+    display: grid;
+    gap: .9em;
+}
+
+.form-group {
+    & label {
+        display: inline-block;
+        padding-block: .5em;
+    }
+
+    & input {
+        width: 100%;
+        max-width: 150px;
+        padding: 0.6em;
+        font-size: inherit;
+        font-family: inherit;
+        text-transform: capitalize;
+        border-radius: 7px;
+        border: none;
+        background: var(--input-bg);
+        color: black;
+    }
+}
+
+.elf-name-display {
+    margin-block: .35em;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.generate-btn {
+    padding-block: var(--button-padding);
+    padding-inline: 1.5em;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    background: var(--festive-green);
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+
+
+.registered-employees {
+    padding: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.elf-names-list {
+    font-size: 1.2rem;
+    text-align: left;
+    list-style-type: "🧝";
+    line-height: 1.5;
+}
+
+
+.footer {
+    padding-bottom: 3em;
+    font-size: .8rem;
+}
+
+@media (width >=500px) {
+    .elf-name-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .elf-name-display,
+    .generate-btn {
+        grid-column: span 2;
+    }
+
+    .generate-btn {
+        inline-size: max-content;
+        justify-self: center;
+    }
+}
+
+.generate-btn:hover {
+    transform: scale(1.05);
+}
