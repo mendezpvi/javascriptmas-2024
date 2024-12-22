@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    font-family: var(--ff-merry);
+    background-color: var(--clr-dark);
+}
+
+:root {
+    --ff-merry: 'Merry Christmas';
+    --ff-nicholas: 'Nicholas';
+
+    --clr-dark: #01110a;
+    --clr-red: #d90429;
+    --clr-brown: #d68f5f;
+    --clr-green: #003e1f;
+    --clr-green-l: #d5f2e3;
+    --radius: .5em;
+}
+
+.main {
+    inline-size: clamp(21rem, 90vw, 55rem);
+    margin: 3em auto;
+}
+
+.title {
+    font-family: var(--ff-merry);
+    font-size: clamp(3.5rem, calc(2.5rem + 4.5vw), 5rem);
+    text-align: center;
+    text-shadow: -5px -2px var(--clr-red);
+    color: var(--clr-green-l);
+    letter-spacing: 5px;
+}
+
+.labels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    justify-items: center;
+    gap: 2em;
+}
+
+.address {
+    position: relative;
+    inline-size: 100%;
+    max-inline-size: 25rem;
+    padding: 0 0 1em 3em;
+    font-family: var(--ff-nicholas);
+    font-weight: bold;
+    background: url('../assets/image/christmas.webp') no-repeat bottom right/contain var(--clr-green-l);
+    color: var(--clr-dark);
+    border: 8px solid var(--clr-red);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.address-name {
+    margin-top: 1.2em;
+    font-size: clamp(2.2rem, calc(1.5rem + 3vw), 3rem);
+    text-shadow: -2px -2px var(--clr-brown);
+}
+
+.address-details {
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+.address-watermark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    inline-size: 10rem;
+    opacity: .27;
+    transform: translate(-20%, 75%) rotate(20deg);
+
+    & img {
+        inline-size: 100%;
+        color: red;
+        filter: invert(57%) sepia(46%) saturate(459%) hue-rotate(341deg) brightness(98%) contrast(90%);
+    }
+}
+
+.address-icon {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    inline-size: 2rem;
+    transform: translate(50%, 15%);
+    filter: invert(15%) sepia(68%) saturate(924%) hue-rotate(111deg) brightness(99%) contrast(103%);
+}

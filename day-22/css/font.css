@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Merry Christmas';
+  src: url('../assets/font/lastchristmas.woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Nicholas';
+  src: url('../assets/font/stnicholas.woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
