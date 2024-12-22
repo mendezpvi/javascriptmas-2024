@@ -18,8 +18,8 @@ But not all of your contacts are on your Christmas list. So your task is this:
 
 ## Solution
 
-<!-- | [Srim code](https://scrimba.com/exercise-s0b5umiusf) |
-| --- | -->
+| [Srim code](https://scrimba.com/exercise-s0hij1787b) |
+| --- |
 
 ![](../assets/gifs/day-22.gif)
 
