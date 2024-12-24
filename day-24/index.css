@@ -1,0 +1,24 @@
+body {
+    min-block-size: 100vh;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #384B70;
+    color: #FCFAEE;
+}
+
+h1 {
+    margin: 0 auto 1em;
+    padding: .25em .5em;
+    max-inline-size: max-content;
+    background-color: hsl(199, 26%, 42%, .25);
+    border-radius: 5px;
+}
+
+h2 {
+    max-inline-size: 40ch;
+    font-size: 2.5rem;
+    text-shadow: -2px -2px #B8001F;
+}
